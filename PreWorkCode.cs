@@ -13,17 +13,13 @@ namespace PreWorkDeliverable
             while (true) { //initiates an infinite loop to keep prompting the user if they wish to continue (yes or no)
 
 
-
-
-                //***Notes on initial veriables********************************************************
+                //***Notes on initial variables********************************************************
                 //strNum is used for converting myNum to a string (need this to insert 0 in the 0 index position)
                 //for the situation when myNum ends in zero
                 //for every other situation where myNum does not end in zero, reverseNum will be printed to the user
                 string strNum = "";
                 int reverseNum = 0;
                 //**************************************************************************************
-
-
 
 
                 Console.WriteLine("Please enter a positive integer to reverse.");
@@ -38,8 +34,6 @@ namespace PreWorkDeliverable
                             }
 
 
-
-
                             //***this is the loop that will reverse myNum*****************************
                             while (myNum > 0) { 
                                 int rem = myNum % 10; //extracts the last digit
@@ -48,16 +42,12 @@ namespace PreWorkDeliverable
                             }//***********************************************************************
 
 
-
-
                             //**if myNum ends in zero, this gets executed*****************************
                             if (zeroAtStart == true) { 
                                strNum = Convert.ToString(reverseNum);
                                strNum = strNum.Remove(0,1).Insert(0, "0");//replaces index "0", which will be a 1, with 0
                                Console.WriteLine(strNum); //this will be the reversed number (the final result) the user will see
                             }//***********************************************************************
-
-
 
 
                           break;
